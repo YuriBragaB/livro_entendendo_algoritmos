@@ -1,0 +1,12 @@
+recursão é quando uma função chama ela mesma
+recursão é melhor para o entendimento de um programa, é mais objetiva, mais clara
+muitos algoritmos importantes utilizam a recursão
+tem que ter muito cuidado parea n fazer um loop infinito com a recursão, quando você escreve uma recursão dve informar quando ela deve parar;
+toda função recursiva possui duas partes,o caso-base e o caso recursivo. O cqaso recursivo é quando a função chama ela mesma, o caso-base é quando a função nao chama a si mesma novamente, de forma que o programa não se torne um loop infinito
+
+pilha = uma estrutura de dados simples, que possui o pop( remove o item do topo e leia-o) e o push(adiciona um item ao topo)
+
+computado usa uma pilha interna = pilha de chamada, é um espaço da memória ram
+pilha de chamada = quando voce chama uma função a partir de outra, a função fica pausada em um estado parcialmente aberto. Ex : chamou uma função que possui 3 funçoes, a primeira estará sendo executada, ápos a chamada da segunda, a função fica pausada em um estado parcialmente completo, os valores da variável aida estçao armazenados
+
+funçoes recursivas tbm utilizam a pilha de chamadas! 

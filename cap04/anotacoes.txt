@@ -1,0 +1,36 @@
+Dividir para conquistar(DC) = uma técnica para encontrar uma solução em um problema difícil
+DC = quebre o elemento até chegar no casso mais básico
+Passos para resolver um problema utilizando DC:
+    1 - Descubra o caso-base, que deve ser o caso mais simples possível
+    2 - Divida ou diminua o seu problema até que ele se torne o caso-base
+
+Algoritmo quicksort = é um algoritmo de ordenação, este algoritmo é muito mais rápido do que a ordenação por seleção, utiliza DC
+Ordenar um array com quicksort:
+    comece pelo caso mais simples, um array com nenhum elemento ou 1 elemento:
+        def quicksort(array):
+            if len(array) < 2:
+                return array
+
+    escolha um elemento como pivo, ápos isso crie 2 sublistas, com elementos maiores e menores do que o pivo( isso é chamado de particionamento)
+    para ordenar execute o quick sort nos subarrays, dps some, array < pivo + pivo + array > pivo
+
+Códigho para o quicksort:
+    def quicksort(array):
+        if len(array) < 2:
+            return array # arrays com 0 e 1 elemento já estão ordenados
+        else:
+        pivo = array[0] # caso recursivo
+        menores[i for i in array[1:] if i <= pivo] subarray de todos os elementos menores do que o pivo
+        maiores = [i for i in array[1:] if i > pivo] 
+        return quicksort(menores) + [pivo] + quicksort(maiores)
+
+quicksort x merge sort:
+quicksort possui um caso médio = O(n log2 n), igual ao do merge sort, porém sua constante é menor, assim tornando-o mais rápido, quicksort funciona bem mais no caso médio do que no pior caso
+melhor escolha quicksort= elemento central
+quicksort melhor tempo = O(log2 n) * O(n) = O(n log2n)
+pior = O(n) * O(n) = O(n**2)
+o melhro caso do quicksort tbm é o tempo médio
+cada nível tem tempo de execução O(n), por isso multiplica
+
+        
+

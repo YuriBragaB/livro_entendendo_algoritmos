@@ -1,0 +1,49 @@
+funçoes hash = possuem tempo constante de O(1)
+função hash = vc insere uma string e retorna um número (mapeia strings e números), relaciona strings e números
+função hash + array = tabela hash
+tabela hash = as mais úteis e complexas estruturas de dados, são conhecidas como mpa hash, mapas, dicionários e tabelas de dispersão
+tabela hash = são muito rápidas
+qualquer linguagem de programação tem uma tabelas hash, no python = dicionários, mo js = objeto 
+nome da tabela leva o nome de hash, Ex: nomes = {}, hash nome
+tabelas has são ótimas para mapear algum item com relação a outro, além de quando precisa pesquisar algo, Big O(1), igual arrays
+tabela hash são utilizadas para acessar um website, lista telefónica 
+checagem de duplicatas é realizada rapidamente, O(1), diferentemente das listas(listas ordenadas), O(n)
+tabelas has são utilizadas como cache
+caching = se nao estiver logado, mostre a página de login, se estiver logado, moistra a página web:
+    diminui o tempo para receber uma página web
+    o servidor trabalha bem menos 
+
+todos os grandes sistemas usam caching, e os dados desses cachings são armazenados em uma tabela hash
+Caching pode ser feito em diversas coisas, contato, termos de condições e muitas outras coisas, para isso ele tem que mapear a URL e relaciona-la aos dados de uma página.
+o server sempre faz a verificação se a página está armazenada na hash
+
+colisão = duas chaves são indicadas para o mesmo espaço
+se diversas chaves indicam para o msm espaço, faça uma lista encadeada, no espaço
+uma boa função hash cria poucas colisões
+
+boa função hash = 
+- baixo fator de carga:
+    fator de carga é fácil de calcular, é uma simples razão: itens / espaços totais. Ex: array = [1,2,3,'','',''], 3 /6 = 0.5
+    um fator de carga maior do que 1 indica que vc tem mais itens do que espaços, sua função hash já começa a piorar
+    se o fator de carga começar a passar de 0.7, será necessário redimensionar(adicionar mais espaço para a tabela hash)
+    REDIMENSIONAR QUANDO O FATOR DE CARGA FOR MAIOR DO QUE 0.7
+    tabela hash tem tempo médio O(1), msm com redimensionamento
+
+- boa função hash:
+    - distribui os valores no array simetricamente
+
+    - uma função hash não ideal agrupa valorres e produz diversas colisões
+
+
+tempo constante O(1), não é algo que acontece instantaneamente, mas sim um tempo que continua SEMPRE o mesmo, independente do tamnho da tabela. No gráfico de tempo Big O, é uma retorna
+as tabelas hash possuem tempo constante O(1), em busca, inserção e remoção
+as tabelas hash no pior dos casos possuem tempo linear O(n), em busca, inserção e remoção
+
+Considerações finais:
+    - as tabelas hash estruturas de dados muito poderosas, pois elas são muito rápidas(O(1)) e permitem a modelagem de dados de uma forma diferentemente
+    - tabela hash = array + função hash
+    - O(1) , para pesquisar,inserir e remover itens
+    - tabelas hash são boas para modelar relações entre dois itens
+    - se o seu fator de carga for maior do que 0.7, será necessário redimensionar a sua tabela hash 
+    - as tabelas hash são utilizadascomo cache de dados
+    - tabelas hash são ótimas para localizar duplicatas

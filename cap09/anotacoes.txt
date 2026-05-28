@@ -1,0 +1,40 @@
+programação dinâmica:
+    encontra a solução ideal
+    uma técnica para resolução de problemas complexos que se baseia na divisão de um problema em um subproblema, os quais são resolvidos separadamente
+    ele começa com a resolução de subproblemas e vai escalando-os até resolver o problema geral
+    cada algoritmo de programação dinâmica sempre começa com uma tabela:
+        linhas = opções
+        colunas = valores
+    é necessário começar da linha inicial, preenchendo cada coluna, fazendo esse processo suscetivamente até acabar as linhas
+    o conteúdo de uma linha pode ser acessado, caso a linha esteja abaixo
+    é necessário calcular a melhor opção para cada valor, levando em conta as opções 
+    quando você tem espaço sobrando, é possível usar as respostas dos subproblemas para descobrir o que colocar no espaço livre. Por isso é necessáriocalcular as estimativas menores, facilita no código
+    quando com a combinação de subprodutos, é possível resolver um problema maior, assim suscetivamente
+    cada célula é calculada com a mesma fórmula
+    é um matriz:
+        linha[i] = opções
+        coluna[j] = coluna
+    programação dinâmica continua construindo progressivamente a sua estimativas
+    é possível que uma opção modifique as colunas
+    só funcionam quando os subprodutos são independentes
+    os valores nas células geralmente é o que você está tentando otimizar
+    cada célula é um subproblema
+    a programação dinâmica é útil quando você está tentando otimizar em relação a um limite
+
+substring em comum:
+    utiliza programação dinâmica
+    ele pega quantas vezes uma letra de uma string se repete comparando com outra string, cada letra que se repete adiciona um 
+    subsequência é diferente de substring:
+        substring: é quando a string se repete suscetivamente
+        subsequência: é quando ocorre a repetição de maneira não suscetiva
+
+considerações finais:
+    - a programação dinâmica é útil quando você está tentando otimizar algo em relação a um limite
+    - você pode utilizar a programação dinâmica quando o problema puder ser dividido em subproblemas discretos(independentes)
+    - todas as soluções em programação dinâmica envolvem tabelas
+    - os valores das células geralmente é o que você estpa tentando otimizar
+    - cada célula é um subproblema, então pense como é possível dividir este subproblemas em outros subproblemas
+    - não existe uma formula única para calcular uma soluçãoem programação dinâmica
+
+
+    

@@ -1,0 +1,18 @@
+pesquisa simples = vai tentando de um  em um, de forma ordenada. Ex = advinhe o número de um a dez, chute = 1, 2, 3, 4, 5. Big O = n. O(n)
+pesquisa simples = sempre possui tempo linear. Tempo linear = número máximo de tentativas é igual tamanho máximo da lista. O(log2 n)
+
+pesquisa binária = elimina metade dos números a cada tentativa. Ex = advinhe o número de um a dez, chute = 5, 7. Big O = log2 n, log2 10 = 4
+pesquisa binária = executada em tempo logarítmico, assim diminuindo MUITO o tempo de esxecução
+pesquisa binária precisa ser ordenada!!!
+
+Big O = uma notação especial que diz o quão rápido é um algoritmo, não é dada em segundos, ela é dada no números de operações, é chamda de Big O por causa do grande O na frente
+Big O  é escrita com O,Big O, (n), número de operações, ficando = O(n)
+Notação Big O = estabelece o tempo de execução para a pior hipótese
+Possíveis Big O:
+- O(log2 n) conhecido como tempo logarítmico. Ex: pesquisa binária
+- O(n) conhecido como tempo linear. Ex: pesquisa simples
+- O(nlog2 n) Ex: um algoritmo rápido de ordenaçãpo, como a ordenação quicksort 
+- O(n**2) Ex: um algoritmo lento de ordenação, como a ordenação por seleção
+- O(n!) Ex: um algoritmo bastante lento, como o do caixeiro viajante
+Esses 5 exemplos são os mais comuns
+A rapidez de um algoritmo não é medida em segundos, mas pelo crecimento do número de operacões

@@ -1,0 +1,26 @@
+listas e arrays são coisas diferentes! Eu utilizava como sinônimos
+não digo posição, fale índice. O índice do número 20 é 2. Não diga a posição do número 20 é 2
+
+usar um array significa que todas as suas tarefas estão armazenadas contiguamente(uma ao lado da outra) na memória, é possível reservar infos,assim contornando o problema do espaço
+arrays possuem desvantagens:caso vc tenha reservado um espaço e não utiliza-lo, será um desperdício de memória, necessidade quantinua de fazer alteraçoes, caso haja uma nova necessidade
+arrays são bem ruins para inserção, porém são boas em ver qualquer elemento, pois se sabe o endereço de cada um, os endereços são independentes
+leitura = O(1) , inserção = O(n)
+
+listas encadeadas resolvem o problema de adição de itens
+com as listas encadeadadas, seus itens podem estar em qualquer lugar da memória, cada item armazena o endereço do próximo item da lista. Um monte de endereços aleatórios de memória estáo ligados
+adicionar um item a lista encadeadada é fácil, você o coloca em qualquer lugar da memória e armazena o endereço do item anterior
+lista encadeada é ótima para inserção, porém é pessimo para pular para o último item pois, não é possível saber seu endereço, os endereços são interrelacionados
+é melhor para deleção, pois é necessário mudar apenas o endereço para  qual o elemento anterior está apontando. Nos arrays tudo precisa ser movido quando um elemento é eliminado
+deleção = O(n) , inserção = O(1)
+leitura = O(n) , inserção = O(1)
+
+Existem dois tipos de acesso: o aleatório e o sequencial.
+sequecial: significa ler os elementos um por um, começando pelo primeiro. Listas encadeadas usam apenas o acesso sequencial
+
+aleatório: permite que você pule direto para o último elemento. Arrays conseguem utilizar esse acesso, além de conseguir utilizar o acesso sequencial
+
+algoritmo de ordenação = é utilizado para ordenar as coisa, ex : notas por cada matéria, para fazer a ordenação é mecessário analisar duas listas, matérias e notas.
+para cada olhada de forma inteira em uma lista é O(n), como são duas, o tempo de execução é O(n x n) ou O(n**2) 
+são úteis quando se tem duas listas que se relacionam 
+é um algoritmo bom, mas n é muito rápido, quicksort é melhor!
+

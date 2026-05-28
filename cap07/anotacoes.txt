@@ -1,0 +1,37 @@
+n necessariamente o com menor passos é o mais rápido, pois pode conter um tempo maior somado
+algoritmo de Dijkstra retorna o caminho mais rápido, pesquisa em largura retorna o caminho com a menor quantidade de passos
+no algoritmo de Dijkstra vc atribui peso para cada segmento(arestas)
+um grafo com pesos, é camado de grafo ponderado
+
+caminho mínimo grafo ponderado = algoritmo de Dijkstra
+caminho mínimo grafo = pesquisa em largura
+
+grafo(ponderado ou n ponderado), pode conter ciclos. O ciclo nunca será o menor caminho
+grafo n direcionado = quando é unilateral
+grafo direcionado = quando um aponta para o outro (ciclo)
+
+o algoritmo de Dijkstra contém quatro etapas:
+    - Encontre o vértice mais barato. Este é o vértice em que você consegue chegar no menor tempo possível:
+        - mais barato é o mais rápido, o mais eficiente
+    - Atualize o custo dos vizinhos desse vértice
+        - caso vc encontre um caminho mais rápido para um ponto, mude o valor do caminho vizinho do ponto mais barato, encontrado no 1 passo
+        - quando vc n sabe o caminho até o final, considere infinito
+    - Repita até que você tenha feito isso para cada vértice do grafo
+        - Repita com os outros vértices do grafo ponderado
+        - Obviamente, n preciasa executar com o caminho final
+    - Calcule o caminho final
+
+para encontrar o caminho final é necessário encontrar uma coluna pai:
+    - coluna pai é quando a informação é obtida tendo como referencial um vértice(pai)
+    - se for encontrado um resultado melhor em outra coluna pai, a coluna pai anterior é alterada
+    - seguindo os pais do final para o início, você terá o caminho completo
+
+ideia-chave por trás do algoritmo de Dijkstra: 
+    - Olhe para o vértice mais barato do seu gráfico: não há uma maneira mais barata de chegar até ele
+
+caminho mais curto não se resume apenas a distâncias físicas, mas que ele também envonve em reduzir algo!
+
+você não pode utilizar o algoritmo de Dijkstra se tiver alguma aresta com peso negativo, pois uma vez que um vértice é processado, isso significa que não há maneira mais barata de chegar nele
+o algoritmo supôs que, por você estar processando o vértice, não havia caminho mais rápido para chegar nele. Essa suposição só funciona caso não haja arestas com pesos negativos.Portanto, não utilize arestas negativas, no algoritmo de Dijkstra
+
+se você quiser encontrar um algoritmo com pesos negativo, utilize o algoritmo de Bellman-Ford

@@ -1,0 +1,52 @@
+A pesquisa de largura permite encontrar o menor caminho entre dois objetos
+problema do caminho mínimo. Neste problema vc sempre tenta achar o caminho mínimo para algo, como por exemplo: a rota mais curta até a casa de seu amigo
+O algoritmo que resolve o problemas de caminho mínimo é a pesquisa em largura
+
+grafo:
+    - um modelo de gráfico é um conjunto de conexões.
+    - cada grafo é constituido de vértices e arestas
+    - um vertice pode conter diversas arestas
+    - por exemplo: sistema de fraquezas no pokemon
+
+pesquisa em largura:
+    - é um tipo diferente de algoritmo, pois utiliza grafos
+    - é utilizada para responder duas perguntas:
+        --> Existe algum caminho do vértice A até o vértice B
+        --> Qual o caminho mínimo do vértice A até o vertice B
+    - pesquisa em largura efetiva = meus amigos, se eles n tiverem, amigos dos meus amigos, respectivamente
+    - conexões de 1 graus = meus amigos. Conexões de 2 grau = amigo dos meus amigos
+    - para descobrir o melhor caminho, basta seguir a lista, qaunto menor o grau, mais próximo, e melhor
+    - pesquisa em largura não encontra apenas o caminho, ela encontra o caminho mais curto
+    - é necessário pesquisar se possui o que vc quer antes de ir para o próximo grau, para isso existe as filas
+
+filas:
+    - funcionam exatamente igual as filas da vida real
+    - n é possível acessar elementos aleatórios nas filas
+    - só são possíveis duas operações:
+        --> enfileirar = adiciona na fila no último elemento
+        --> desenfileirar = tira da fila, o primeiro elemento
+    - FIFO (primeira a entrar, primeira a sair), pilhas = LIFO ( última a entrar, primeiro a sair)
+
+
+implementando grafo:
+    - um grafo conciste em diversos vértices, cada vértice é conectado aos vértices vizinhos, como expressar uma relação do tipo 'você -> bob'
+    - estrutura de dados que expressa relações: tabela hash!!!!
+    - um grafo é apenas um monte de vértices e arestas, portanto isso é tudo que você precisa para ter um grafo, uma tabela hash, com chave/vértice (nome da pessoa), valor/arestas (conexões com a pessoa)
+    - digrafo = grafo direcionado, é quando a relação acontece apenas em um sentido, quando o da pessoa dql grau é []
+    - grafo = nao contem setas, e ambos os vértices são vizinhop um do outro
+
+- Ao fazer o algoritmo pesquisa em largura é importante verificar se a pessoa já foi verificada, já que deixa-la é perca de tempo, para isso é necessário criar uma nova lista e verificar se a pessoa está encluida nessa lista, para seguir com o códigoem alguns casos específicos pode gerar um loop infinito
+
+- Tempo de execução:
+    - Adicionar uma pessoa na lista leva tempo de execução O(V + A), vértices + arestas, pois a aresta é a conexão com a pessoa, além de manter uma lista com as pessoas verificadas, que leva um tempo constante de O(1), fazer isso para cada pessoa terá tempo de execução(numero de pessoas), para ter o total, somamos os dois BigO
+
+Considerações finais:
+    - a pesquisa em largura lhe diz se há um caminho de A para B
+    - se esse caminho existir, a pesquisa em largura lhe dirá o menor caminho
+    - se vc tem um problema do tipo 'encontre o menor X', tente modelar o seu problema utilizando grafos e use a pesquisa em largura para resolvê-lo 
+    - um digrafo contém setas e as relações seguem a direção das setas nos dois sentidos
+    - grafos n direcionados, ou apenas grafo, não contém setas, e a relação acontece nos dois sentidos, sendo representada por um vértice simples
+    - filas são FIFO(primerio a entrar, primeiro a sair)
+    - pilhas são LIFO(último a entrar, primeiro a sair)
+    - você precisa verificar as pessoas na ordem em que elas foream adicionadas à lista de pesquisa. Portanto a lista de pesquisa deve ser uma fila; caso contrário, você não obeterá o caminho mínimo.
+    - cada vez que vc precisa verificar alguém, procure não verificá-lo novamente. Caso contrário, poderá acabar em um loop infinito, além de gastar memória

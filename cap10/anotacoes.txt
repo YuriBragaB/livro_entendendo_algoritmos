@@ -1,0 +1,29 @@
+K-vizinhos:
+    é um algoritmo simples
+    é utilizado quando se tem gráficos
+    x -  y   - z , compara x com z para achar y, se mais pontos estiverem mais próximos de X, y é provavelemente x
+    é um algoritmo que pega pontos próximos do elemento que você está tentando classificar
+    os elementos são agrupados por similaridade
+    é possível encontrar as distâncias utilizando Pitágoras
+    é necessário utilizar coordenadas para ter a posição exata
+    pode ter quantidades diversas de conjuntos para expressar a posição do elemento
+    a distância, resultante do Pitágoras, informa a similaridadeentre estes conjuntos
+    a quantidade de vizinhos é arbitrária, pode ser: 2, 10, 50
+    é necessário organizar o algoritmo dos K-vizinhos mais próximos: a classificação e a regressão
+        - classificação = classificar em grupos
+        - regressão = advinhar uma resposta(como um número)
+    é preciso ter bom senso ao escolher as características, é preciso aplicar um método de avaliação útil:
+        - características correlacionadas
+        - características imparciais
+    o algorimo dos k-vizinhos é muito útil no machine learning
+    k-vizinhos podem ser utilizados em diversas tecnologias complexas, que visam reconhecer padrões
+
+considerações finais:
+    - o algoritmo dos k-vizinhos mais proximos é utilizado na classificação e na regressão. Ele envolve observar os K-vizinhos mais próximos
+    - classificação = classificar grupos
+    - regressão = advinhar uma resposta(como um número)
+    - Extrair características significa converter um item(como uma fruta ou usuário) em uma lista de números que podem ser comparados
+    - Escolher boas características é uma parte impotanate para que um algorimo k-vizinhos mais próximo opere corretamente
+
+
+

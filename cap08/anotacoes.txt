@@ -1,0 +1,37 @@
+algoritmos gulosos(algoritmos gananciosos):
+    são fáceis, porém nem sempre funcionam
+    Um algoritmo guloso é simples: a cada etapa deve-se escolher o movimento ideal. Em termos técnicos: a cada etapa, escolhe-se a solução ideal
+    são simples de escrever e normalmente chegam bem próximo da solução perfeita.
+    quickort = n é um alogritmo guloso
+    pesquisa em largura = n é um algoritmo guloso
+    algoritmo de Dijkstra = é um alogritmo guloso(se for negativo n dá o valor exato)
+
+algoritmos de aproximação:
+    é um algoritmo guloso
+    são avaliados por 2 critérios: rapidez e pela capacidade de chegar à solução ideal
+
+
+conjuntos:
+    são definidos por set()
+    são iguais as listas, porém não podem ter elementos repetidos
+    igual ao conjunto da matemática
+    possui 3 operações:
+        uniao = é a soma dos dois conjuntos, tirando os elementos iguais = |
+        interseção = é o que se repete nos dois conjuntos = &
+        diferença = subtraia os itens de um conjunto dos itens de outro conjunto = -
+
+NP-completos:
+    são estremamente lentos, quanto mais aumenta, problemas de fácil resposta, porém alta demora para chegar no resultado, se o número for gande, problemas como o caixeiro-viajante estão nessa clasificação
+    não há maneira fácil de dizer se o problema é NP-completo ou não
+    para saber se é Np-completo, existe indicativos:
+        - seu algoritmo rodas rápido no cmc, porém fica lento conforme aumenta
+        - n consegue dividir em subprodutos
+        - sequências, difíceis de se resolver
+        - conjuntos
+        - se for possível reescrever como o problema do caixeiro-viajante ou q cobertura mínima de conjuntos
+
+considerações finais:
+    - toma decisão no que parece ser o melhor, não no melhor em si 
+    - problemas NP-completos n têm uma solução rápida
+    - para resolver NP-conmpleto, é melhor implementar um algoritmo de aproximação
+    - algoritmos gulosos, são fáceis de escrever e têm tempo de execução baixo, portanto eles são bons algoritmos de aproximação
