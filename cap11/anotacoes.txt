@@ -1,0 +1,58 @@
+árvore binária de busca:
+    é utilizada para executar a pesquisa binária sem precisar ordenar o array
+    separa os valores como um grafo, em que um lado possui o maior e no outro o menor, suscetivamente
+    possuem um escala big O(log n) de busca, inserção e remoção 
+    para ela possuir esse bom desempenho, ela tem que ser balanceada
+
+índices invertidos:
+    é uma estrutura de dados simples, que é utilizada para buscas
+    cria uma tabela hash, com a chave sendo o que vc quer buscar , com o valor sendo onde aparece
+    é uma hash que mapeia palavras para lugares onde elas aparecem
+
+transformada de fourier:
+    é uma ferramenta matemática que decompõe um sinal ou função temporal em suas frequências constituintes
+    muito utilizada nas músicas
+
+algoritmos paralelos:
+    divide uma função em subpartes, com o intuito de aumentar a velocidade e eficiência
+
+mapreduce:
+    são algoritmos distribuidos
+    algoritmos distribuidos são ótimmos quando você tem muito trabalho a ser feito e quer diminuir o tempo necessário
+    são muito utilizadas com lambda
+    em python eu acho melhor utilizar compreensão de listas
+    map:
+        pega um array e aplica a mesma função para cada item do array 
+        map(função, array)
+        funçaõ map é ótima para dividir trabalahos, assim aumentando a eficiência do script
+    reduce:
+        reduz uma lista para apenas um item
+    quando você tiver um grande conjunto de dados(bilhões de linhas), o MapReduce poderá fornecer uma resposta em minutos, enquanto um banco de dados tradicional pode levar horas
+
+filtros de bloom:
+    são ótimos pois utilizam pouco espaço, porém n oferecem uma resposta exata, mas será um resultado provavelmente correto
+
+hyperloglog:
+    muito parecido com os filtros de bloom
+
+comparando arquivos:
+    é utilizado um hash SHA
+    SHA = dado uma string com valor, retorna uma hash para essa string
+    é possível compara duas SHA para ver se são iguais, se forem, o arquivo é o mesma
+
+verificando senhas:
+    as senhas são guardadas como uma hash SHA
+    quando a senha é digitada, ela é comparada com a hash armazenada do sistema
+    n é possível reverter a hash para a string original, mas é possível converter a string para hash
+    caso um hacker invada o sistema ele n terá acesso as senhas, pois a propriedade do SHA impede 
+    algoritmos SHA são insensitivo, ou seja imprevisíveis
+
+troca de chaves de diffie-hellman:
+    é um algoritmo de decodificção, utilizado para criptografar as mensagens
+
+programação linear:
+    é usada para maximizar algo em relação a um limite
+    pode ser utilizada para maximizar o lucro
+    todos os problemas de grafo podem ser realizados com programação linear
+    a programação linear é um framework muito mais geral, enquanto o problema de grafos é apenas um supconjunto dela
+    utiliza um algoritmo complexo
